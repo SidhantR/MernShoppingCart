@@ -7,7 +7,8 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/routes/seederScript.js"
+    "data:import": "node backend/routes/seederScript.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "sid",
   "license": "ISC",
