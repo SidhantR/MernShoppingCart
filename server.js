@@ -6,10 +6,10 @@ const productRoutes = require("./routes/productRoutes")
 connectDB();
 const app = express()
 
-
 app.use(express.json())
 
 app.use("/api/products", productRoutes)
+
 
 if(NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, '/frontend/build')))
