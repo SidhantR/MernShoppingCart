@@ -2,6 +2,9 @@
   "name": "mern-full-stack-website",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -16,7 +19,8 @@
     "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.17"
+    "mongoose": "^5.11.17",
+    "node": "^15.14.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
