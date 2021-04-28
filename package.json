@@ -6,7 +6,7 @@
     "start": {"start" : "set NODE_ENV=production && node server.js"},
     "start_windows": "set NODE_ENV=production&&node server.js",
     "server": "nodemon server.js",  
-    "client": "npm start --prefix frontend",
+    "client": "npm start --prefix frontend", 
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/routes/seederScript.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
