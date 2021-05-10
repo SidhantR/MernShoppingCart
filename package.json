@@ -6,7 +6,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "SET NODE_ENV=production && NPM_CONFIG_PRODUCTION=true && node server.js",
+    "start": "node server.js",
     "start_windows": "SET NODE_ENV=production&&node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix frontend",
